@@ -1,15 +1,55 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../assets/styles/global.css"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<section>
+		<h1>Hi there, I’ m Johnny Estrada</h1>
+		<p>A Full Stack Web Developer located in San Diego, CA. I love building cool shit using technology, with the goal of building my own enterprise.</p>
+
+		<p>I’m a passionate developer that loves to build things. Not only do I love to code, but I love to travel, build cool thing using 3D prting, and geeking out looking at start.</p>
+
+		<button>Projects</button>
+		<button>Contact</button>
+	</section>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<div></div>
+
+		<div>
+			<img />
+			<h3>Who am I?</h3>
+			<div></div>
+			<p>I’m a passionate developer that loves to build things. Not only do I love to code, but I love to travel, build cool thing using 3D prting, and geeking out looking at start.</p>
+			<p>’m a passionate developer that loves to build things. Not only do I love to code, but I love to travel, build cool thing using 3D prting, and geeking out looking at start.</p>
+		</div>
+
+		<div>
+			<img />
+			<h3>My Skills</h3>
+			<div></div>
+			<p>These are some of the languages, frameworks, and tools that I use</p>
+			<div>
+				Icons
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Projects</h2>
+		<div></div>
+		<p>Things I’ve made trying to put my dent in the world</p>
+		<div>card</div>
+	</section>
+	<section>
+		<h2>Contact</h2>
+		<div></div>
+		<p>Feel free to contact me by submitting the form below and I will get back to you as soon as possible</p>
+	</section>
+	<section>
+		<h2>Blog</h2>
+		<div></div>
+		<p>All of my articles on programming, things I’ve learned along the way, and how I’ve built my projects.</p>
+	</section>
+</BaseLayout>
