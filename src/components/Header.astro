@@ -1,0 +1,28 @@
+---
+import Logo from "./ui/Logo.astro";
+import Hamburger from "./ui/Hamburger.astro";
+import Navigation from "./ui/Navigation.astro";
+---
+
+<style lang="scss">
+  .header {
+    position: relative;
+    z-index: 1;
+    height: 79px;
+    color: var(--neutral-grey-1);
+  }
+
+  div {
+    align-items: center;
+  }
+</style>
+
+<header class="header">
+  <div class="container">
+    <Logo />
+    <div>
+      <Hamburger />
+      <Navigation />
+    </div>
+  </div>
+</header>
