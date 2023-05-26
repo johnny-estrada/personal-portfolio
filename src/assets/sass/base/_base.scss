@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  // outline: 1px solid rgb(238, 81, 81);
+}
+
+html {
+//   color-scheme: light dark;
+  background: var(--neutral-grey-10);
+  height: 100%;
+  // This helps with jump-links
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.56;
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
