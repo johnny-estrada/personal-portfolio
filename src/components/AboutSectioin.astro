@@ -1,0 +1,153 @@
+---
+---
+
+<style lang="scss">
+  .about {
+    margin-bottom: 180px;
+
+    &__header {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 130px;
+
+      @media (max-width: 768px) {
+        gap: 0;
+      }
+    }
+
+    &__text {
+      position: relative;
+    }
+
+    h2 {
+      position: relative;
+      margin: 200px 0;
+      font-weight: 700;
+      font-size: 3rem;
+      color: var(--text-stone-300);
+      line-height: 56px;
+      letter-spacing: -1.5px;
+      z-index: 1;
+
+      
+    }
+
+    span {
+      position: absolute;
+      font-weight: 700;
+      font-size: 150px;
+      line-height: 105px;
+      letter-spacing: 2.5px;
+      color: rgba(35, 35, 35, 0.5);
+      filter: blur(2px);
+      
+      @media (max-width: 768px) {
+        font-size: 134px;
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+    }
+
+    p {
+      color: var(--text-stone-300);
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 445px;
+      margin-bottom: 66px;
+    }
+
+    a {
+      color: var(--text-white);
+      border-bottom: 2px solid var(--accent-green-400);
+      padding-bottom: 10px;
+    }
+
+    a:hover {
+      color: var(--accent-green-400);
+      transition: color 200ms ease-in-out;
+    }
+
+    a:focus {
+      color: var(--accent-green-400);
+    }
+
+    a:active {
+      color: var(--text-white);
+    }
+  }
+
+  .img {
+    position: absolute;
+    left: 50%;
+    top: 1195px;
+    translate: -115%;
+    z-index: -1;
+  }
+
+  .image-outline {
+    position: relative;
+    width: 450px;
+    height: 428px;
+
+    border: 1px solid hsl(0, 0%, 100%);
+    filter: drop-shadow(0px 4px 20px hsl(0, 0%, 100%));
+  }
+
+  .bg-pattern-rings1 {
+    position: absolute;
+    left: 55%;
+    top: 1550px;
+    translate: 55%;
+    background-image: url("/icons/pattern-rings.svg");
+    background-repeat: no-repeat;
+    width: 530px;
+    height: 129px;
+  }
+</style>
+
+<section class="about">
+  <div class="about__header">
+    <h2>ABOUT</h2>
+    <span>ABOUT</span>
+  </div>
+
+  <div class="container">
+    <div class="about__content">
+      <div class="img">
+        <image
+          src="/images/avatar.webp"
+          alt="A man sitting behind a sunset, relaxed, with an amazing smile."
+          width="450px"
+          height="428px"
+        />
+      </div>
+
+      <div class="image-outline"></div>
+      <div class="about__text">
+        <h3>Get To Know Me</h3>
+        <p>
+          I'm Johnny, a full-stack web developer passionate about crafting great
+          applications using the web.
+        </p>
+        <a href="/about">
+          LEARN MORE
+          <span class="visually-hidden"> about Johnny and his background.</span>
+        </a>
+      </div>
+      <div class="bg-pattern-rings1"></div>
+    </div>
+  </div>
+</section>
