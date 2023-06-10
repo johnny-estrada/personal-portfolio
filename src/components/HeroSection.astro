@@ -11,12 +11,14 @@ import Hero from "./ui/Hero.astro";
   }
 
   .bottom-border {
+    margin: auto;
     border-bottom: 1px solid hsl(0, 0%, 100%);
+    max-width: 1110px;
   }
 </style>
 
-<section class="section">
-  <div class="container bottom-border">
+<section class="section bottom-border">
+  <div class="container">
     <Hero />
   </div>
 </section>
